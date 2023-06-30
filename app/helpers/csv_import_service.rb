@@ -9,8 +9,7 @@ class CsvImportService
 
       # map the CSV columns to your database columns
       flight_hash = {}
-      flight_hash[:date] = row['date']
-      puts "\n\n\n" + flight_hash[:date]
+      flight_hash[:date] = Date.strptime(row['date'], '%m/%d/%Y')
       flight_hash[:from] = row['from']
       flight_hash[:to] = row['to']
       flight_hash[:tach] = row['tach'].to_f
@@ -18,8 +17,6 @@ class CsvImportService
       flight_hash[:oil] = row['oil'].to_i
       flight_hash[:fuel] = row['fuel'].to_f
       flight_hash[:note] = row['note']
-
-      puts "Here's the flight data: " + flight_hash.to_s
 
       begin
         Flight.find_or_create_by!(flight_hash)
