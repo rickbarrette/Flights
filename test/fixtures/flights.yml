@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  to: MyString
+  from: MyString
+  oil: 1
+  fuel: 1.5
+  hobbs: 1.5
+  tach: 1.5
+  date: 2023-06-30
+  note: MyString
+  updated_at: 2023-06-30 00:31:29
+
+two:
+  to: MyString
+  from: MyString
+  oil: 1
+  fuel: 1.5
+  hobbs: 1.5
+  tach: 1.5
+  date: 2023-06-30
+  note: MyString
+  updated_at: 2023-06-30 00:31:29

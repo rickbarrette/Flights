@@ -1,0 +1,11 @@
+<h1><%= t :flights %></h1>
+
+<ul>
+  <% @flights.each do |flight| %>
+    <li>
+      <%= link_to flight.to_s, flight %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to :new_flight, new_flight_path %>

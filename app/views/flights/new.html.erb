@@ -1,0 +1,51 @@
+<h1><%= t :new_flight %></h1>
+
+<%= form_with model: @flight do |form| %>
+  <div>
+    <%= form.label :date %><br>
+    <%= form.date_field :date %>
+  </div>
+  
+  <div>
+    <%= form.label :from %><br>
+    <%= form.text_field :from %>
+  </div>
+
+  <div>
+    <%= form.label :to %><br>
+    <%= form.text_field :to %>
+  </div>
+
+  <div>
+    <%= form.label :oil %><br>
+    <%= form.number_field :oil %>
+  </div>
+  
+  <div>
+    <%= form.label :fuel %><br>
+    <%= form.number_field :fuel, step: 0.1, max: 9999.9, min: 0 %>
+  </div>
+  
+  <div>
+    <%= form.label :tach %><br>
+    <%= form.number_field :tach, step: 0.1, max: 99999.9, min: 0 %>
+  </div>
+  
+  <div>
+    <%= form.label :hobbs %><br>
+    <%= form.number_field :hobbs, step: 0.1, max: 24, min: 0 %>
+  </div>
+
+  <div>
+    <%= form.label :note %><br>
+    <%= form.text_field :note %>
+  </div>
+
+  <br/>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to :back, :back %>
