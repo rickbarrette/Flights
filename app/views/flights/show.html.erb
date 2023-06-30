@@ -1,11 +1,11 @@
 <h1><%= @flight.date %></h1>
 
-<p><%= t :from %><%= @flight.from %></p>
-<p><%= t :to %><%= @flight.to %></p>
-<p><%= t :oil %><%= @flight.oil %></p>
-<p><%= t :fuel %><%= @flight.fuel %></p>
-<p><%= t :tach %><%= @flight.tach %></p>
-<p><%= t :hobbs %><%= @flight.hobbs %></p>
-<p><%= t :note %><%= @flight.note %></p>
+<p><%= t :from %> <a href="https://skyvector.com/airport/<%= @flight.from %>"><%= @flight.from %></a></p>
+<p><%= t :to %> <a href="https://skyvector.com/airport/<%= @flight.to %>"><%= @flight.to %></a></p>
+<p><%= t :oil %> <%= @flight.oil %></p>
+<p><%= t :fuel %> <%= @flight.fuel %></p>
+<p><%= t :tach %> <%= @flight.tach %></p>
+<p><%= t :hobbs %> <%= @flight.hobbs %></p>
+<p><%= t :note %> <%= @flight.note %></p>
 
 <%= link_to :flights, :root %>
