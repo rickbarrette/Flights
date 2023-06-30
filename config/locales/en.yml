@@ -43,4 +43,7 @@ en:
   date: "Date:"
   updated: "Updated"
   fuel: "Fuel:"
-
+  import: "⚙️ Import"
+  import_started: "Import started..."
+  no_file: "No file added"
+  only_csv: Only CSV files allowed
