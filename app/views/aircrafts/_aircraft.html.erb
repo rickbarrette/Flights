@@ -1,0 +1,34 @@
+<div id="<%= dom_id aircraft %>">
+  <p>
+    <strong>Tail:</strong>
+    <%= aircraft.tail %>
+  </p>
+
+  <p>
+    <strong>Make:</strong>
+    <%= aircraft.make %>
+  </p>
+
+  <p>
+    <strong>Model:</strong>
+    <%= aircraft.model %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= aircraft.year %>
+  </p>
+
+  <p>
+    <strong>Serial:</strong>
+    <%= aircraft.serial %>
+  </p>
+
+  <p>
+    <strong>Tt:</strong>
+    <%= aircraft.tt %>
+  </p>
+
+  <%= link_to :flights, [aircraft, :flights]%>
+
+</div>

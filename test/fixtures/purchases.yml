@@ -2,22 +2,12 @@
 
 one:
   aircraft: one
+  tt: 1.5
   date: 2023-07-01
-  from: MyString
-  to: MyString
-  oil: 1
-  fuel: 1.5
-  tach: 1.5
   hobbs: 1.5
-  note: MyString
 
 two:
   aircraft: two
+  tt: 1.5
   date: 2023-07-01
-  from: MyString
-  to: MyString
-  oil: 1
-  fuel: 1.5
-  tach: 1.5
   hobbs: 1.5
-  note: MyString

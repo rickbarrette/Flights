@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aircraft: one
+  tt: 1.5
+  start: 1.5
+  date: 2023-07-01
+  current: 1.5
+
+two:
+  aircraft: two
+  tt: 1.5
+  start: 1.5
+  date: 2023-07-01
+  current: 1.5

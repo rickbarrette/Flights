@@ -1,0 +1,62 @@
+<%= form_with(model: flight) do |form| %>
+  <% if flight.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(flight.errors.count, "error") %> prohibited this flight from being saved:</h2>
+
+      <ul>
+        <% flight.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :aircraft_id, style: "display: block" %>
+    <%= form.text_field :aircraft_id %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :from, style: "display: block" %>
+    <%= form.text_field :from %>
+  </div>
+
+  <div>
+    <%= form.label :to, style: "display: block" %>
+    <%= form.text_field :to %>
+  </div>
+
+  <div>
+    <%= form.label :oil, style: "display: block" %>
+    <%= form.number_field :oil %>
+  </div>
+
+  <div>
+    <%= form.label :fuel, style: "display: block" %>
+    <%= form.number_field :fuel, step: 0.1, max: 99999.9, min: 0 %>
+  </div>
+
+  <div>
+    <%= form.label :tach, style: "display: block" %>
+    <%= form.number_field :tach, step: 0.1, max: 99999.9, min: 0 %>
+  </div>
+
+  <div>
+    <%= form.label :hobbs, style: "display: block" %>
+    <%= form.number_field :hobbs, step: 0.1, max: 24, min: 0 %>
+  </div>
+
+  <div>
+    <%= form.label :note, style: "display: block" %>
+    <%= form.text_field :note %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

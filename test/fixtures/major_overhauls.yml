@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  engine: one
+  tach: 1.5
+  date: 2023-07-01
+
+two:
+  engine: two
+  tach: 1.5
+  date: 2023-07-01

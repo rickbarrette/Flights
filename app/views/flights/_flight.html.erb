@@ -1,0 +1,47 @@
+<div id="<%= dom_id flight %>">
+  <p>
+    <strong>Aircraft:</strong>
+    <%= flight.aircraft.tail %>
+  </p>
+
+  <p>
+    <strong>Date:</strong>
+    <%= flight.date %>
+  </p>
+
+  <p>
+    <strong>From:</strong>
+    <a href="https://skyvector.com/airport/<%= flight.from %>"><%= flight.from %></a>
+  </p>
+
+  <p>
+    <strong>To:</strong>
+    <a href="https://skyvector.com/airport/<%= flight.to %>"><%= flight.to %></a>
+  </p>
+
+  <p>
+    <strong>Oil:</strong>
+    <%= flight.oil %>
+  </p>
+
+  <p>
+    <strong>Fuel:</strong>
+    <%= flight.fuel %>
+  </p>
+
+  <p>
+    <strong>Tach:</strong>
+    <%= flight.tach %>
+  </p>
+
+  <p>
+    <strong>Hobbs:</strong>
+    <%= flight.hobbs %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= flight.note %>
+  </p>
+
+</div>

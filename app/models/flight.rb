@@ -1,4 +1,6 @@
 class Flight < ApplicationRecord
+  belongs_to :aircraft
+
   validates :date, presence: true
   validates :from, presence: true
   validates :to, presence: true

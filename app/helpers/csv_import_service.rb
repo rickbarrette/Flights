@@ -1,7 +1,8 @@
 class CsvImportService
   require 'csv'
 
-  def call(file)
+  def call(params)
+    file = params[:file]
     opened_file = File.open(file)
 
     options = { headers: true, col_sep: ',' }
@@ -9,6 +10,7 @@ class CsvImportService
 
       # map the CSV columns to your database columns
       flight_hash = {}
+      flight_hash[:aircraft_id] = params[:aircraft_id]
       flight_hash[:date] = Date.strptime(row['date'], '%m/%d/%Y')
       flight_hash[:from] = row['from']
       flight_hash[:to] = row['to']

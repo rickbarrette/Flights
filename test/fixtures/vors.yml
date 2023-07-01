@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aircraft: one
+  date: 2023-07-01
+  location: MyString
+  type: 
+  bearing_error_vor_1: 1
+  bearing_error_for_2: 1
+  pilot: MyString
+
+two:
+  aircraft: two
+  date: 2023-07-01
+  location: MyString
+  type: 
+  bearing_error_vor_1: 1
+  bearing_error_for_2: 1
+  pilot: MyString

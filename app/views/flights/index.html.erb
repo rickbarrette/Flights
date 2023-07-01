@@ -1,15 +1,13 @@
-<h1><%= t :flights %></h1>
+<p style="color: green"><%= notice %></p>
 
-<ul>
+<h1>Flights for <%= @aircraft.tail %></h1>
+
+<div id="flights">
   <% @flights.each do |flight| %>
-    <li>
-      <%= link_to flight.to_s, flight %>
-    </li>
+    <p>
+      <%= link_to flight.to_s , flight %>
+    </p>
   <% end %>
-</ul>
-
-<%= link_to :new_flight, new_flight_path %>
-
-<br/>
+</div>
 
 <%= render "import" %>
