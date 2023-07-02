@@ -1,7 +1,7 @@
 <div id="<%= dom_id flight %>">
   <p>
     <strong>Aircraft:</strong>
-    <%= flight.aircraft.tail %>
+    <%= link_to flight.aircraft.tail, flight.aircraft %>
   </p>
 
   <p>
