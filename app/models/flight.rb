@@ -15,6 +15,7 @@ class Flight < ApplicationRecord
   scope :month, -> { where('date >= ?', Time.now - 1.month) }
   scope :three_months, -> { where('date >= ?', Time.now - 3.month) }
   scope :year, -> { where('date >= ?', Time.now - 1.year) }
+  scope :tach, ->(tach) { where('tach >= ?', tach) }
     
   # Return a human readbale string
   def to_s
