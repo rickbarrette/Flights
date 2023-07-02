@@ -16,4 +16,8 @@ class Aircraft < ApplicationRecord
   validates :serial, presence: true
   validates :tt, presence: true
 
+  def to_s
+    "#{self.tail} - #{self.year} #{self.make} #{self.model}"
+  end
+  
 end

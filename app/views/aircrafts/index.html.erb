@@ -1,12 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Aircrafts</h1>
+<h1>Aircraft</h1>
 
 <div id="aircrafts">
   <% @aircrafts.each do |aircraft| %>
-    <%= render aircraft %>
     <p>
-      <%= link_to "Show this aircraft", aircraft %>
+      <%= link_to aircraft.to_s, aircraft %>
     </p>
   <% end %>
 </div>
