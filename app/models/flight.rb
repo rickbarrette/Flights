@@ -10,6 +10,7 @@ class Flight < ApplicationRecord
   validates :hobbs, presence: true
 
   def to_s
-    self.date.to_s + " " + self.from + " " + self.to 
+    "#{self.date.to_s} - #{self.from} #{self.to}" 
   end
+  
 end
