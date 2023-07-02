@@ -1,24 +1,12 @@
-# README
+# Flights
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of this project is to make a simple flight tracker for aircraft owners
 
-Things you may want to cover:
-
-* Ruby version
 
 * System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+  - Docker
 
 * Deployment instructions
-
-* ...
+```
+  docker-compose up -d
+```
