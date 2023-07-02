@@ -29,6 +29,21 @@
     <%= aircraft.tt %>
   </p>
 
+  <p>
+    <strong>Flight Time:</strong>
+    <%= aircraft.flights.sum(&:time) %>
+  </p>
+
+  <p>
+    <strong>Fuel:</strong>
+    <%= aircraft.flights.sum(&:fuel) %>
+  </p>
+
+  <p>
+    <strong>Oil:</strong>
+    <%= aircraft.flights.sum(&:oil) %>
+  </p>
+
   <%= link_to :flights, [aircraft, :flights]%>
 
 </div>
