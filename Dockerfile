@@ -3,9 +3,11 @@ FROM ruby:latest
 WORKDIR /usr/src/app
 
 COPY . .
-RUN bundle install
 
-CMD rails db:migrate
+RUN ["chmod", "+x", "docker-entrypoint.sh"]
+
+RUN ["bundle", "install"]
 
 EXPOSE 3000
-CMD rails server -b 0.0.0.0
+
+ENTRYPOINT ["/bin/sh", "/usr/src/app/docker-entrypoint.sh"]
