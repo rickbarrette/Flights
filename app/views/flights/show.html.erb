@@ -3,9 +3,17 @@
 <%= render @flight %>
 
 <div>
+  <%= link_to_if @flight.prev, "Previous", @flight.prev %> |
+  <%= link_to_if @flight.next, "Next", @flight.next%>
+</div>
+
+<br/>
+
+<div>
   <%= link_to "Edit this flight", edit_flight_path(@flight) %> |
   <%= link_to "Back to Flights", [@flight.aircraft, :flights]%>
 
+  <br/>
   <br/>
 
   <%= button_to "Destroy this flight", @flight, method: :delete %>
