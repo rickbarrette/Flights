@@ -2,9 +2,14 @@
 
 <%= render @aircraft %>
 
+<br/>
+
 <div>
   <%= link_to "Edit this aircraft", edit_aircraft_path(@aircraft) %> |
   <%= link_to "Back to aircrafts", aircrafts_path %>
+
+  <br/>
+  <br/>
 
   <%= button_to "Destroy this aircraft", @aircraft, method: :delete %>
 </div>
